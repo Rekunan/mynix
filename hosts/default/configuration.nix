@@ -88,20 +88,27 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio = {
+    enable = false;
+    support32Bit = true;
+    package = pkgs.pulseaudioFull;
+    extraConfig = "load-module module-combine-sink";
+  };
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
+    audio.enable = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+  nixpkgs.config.pulseaudio = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -110,7 +117,7 @@
   users.users.rekunan = {
     isNormalUser = true;
     description = "Mang Nilian";
-    extraGroups = [ "networkmanager" "wheel" "video" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
     packages = with pkgs; [
       firefox
       kate
@@ -147,6 +154,14 @@
       zoom-us
       pandoc
       texliveFull
+      pulseaudio
+      pulseaudioFull
+      pipewire
+      libGL
+      libGLU
+      openssl
+      openssl_legacy
+      openssl_1_1
     ];
   };
 
@@ -156,6 +171,16 @@
     # programs here, NOT in environment.systemPackages
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.1.1d" # Replace this with the package and version you want to allow
+    "openssl-1.1.1w"
+  ];
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      nginxStable = prev.nginxStable.override { openssl = prev.openssl_1_1; };
+    })
+  ];
 
   virtualisation.waydroid.enable = true;
 
