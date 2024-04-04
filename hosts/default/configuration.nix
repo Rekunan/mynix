@@ -162,6 +162,11 @@
       openssl
       openssl_legacy
       openssl_1_1
+      imagemagickBig
+      meson
+      ninja
+      obs-studio
+      vlc
     ];
   };
 
