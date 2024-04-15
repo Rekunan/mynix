@@ -70,12 +70,17 @@
     enable = true;
     videoDrivers = [ "amdgpu" ];
     desktopManager.plasma5.enable = true;
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
+    #displayManager.sddm.enable = true;
+    #displayManager.sddm.wayland.enable = true;
     displayManager.lightdm.background = "https://safe.reku.me/jPNXwAPptI8t.png";
     libinput.touchpad.naturalScrolling = true;
     libinput.touchpad.accelProfile = "flat";
     libinput.mouse.accelProfile = "flat";
+  };
+
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
   };
 
   hardware.opengl = {
@@ -167,6 +172,7 @@
       ninja
       obs-studio
       vlc
+      jdk21
     ];
   };
 
