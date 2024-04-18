@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      inputs.nix-gaming.nixosModules.pipewireLowLatency
       ../../modules/nixos/mounts.nix
     ];
 
@@ -112,7 +113,20 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+    extraConfig.pipewire."92-low-latency" = {
+      context.properties = {
+        default.clock.quantum = 128;
+        default.clock.min-quantum = 128;
+      };
+    };
+
+    lowLatency = {
+      enable = true;
+      quantum = 128;
+      rate = 48000;
+    };
   };
+
   nixpkgs.config.pulseaudio = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
