@@ -89,6 +89,8 @@
     driSupport32Bit = true;
   };
 
+  hardware.opentabletdriver.enable = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -169,7 +171,6 @@
       wl-clipboard
       protonvpn-gui
       ffmpeg-full
-      opentabletdriver
       zoom-us
       pandoc
       texliveFull
@@ -187,6 +188,8 @@
       obs-studio
       vlc
       jdk21
+      libsForQt5.kamoso
+      opentabletdriver
     ];
   };
 
