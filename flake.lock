@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "aagl-gtk-on-nix": {
+    "aagl": {
       "inputs": {
         "flake-compat": "flake-compat",
         "nixpkgs": [
@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1712185015,
-        "narHash": "sha256-mL3VSJRkyDJbMh/QqUeOhGOsEOTS7Jw9Tqw4fM+VjB4=",
+        "lastModified": 1713629865,
+        "narHash": "sha256-fsSuh5ZYGYninYR68obMaSqKxnxEnCHIJJFc6igjHGw=",
         "owner": "ezKEa",
         "repo": "aagl-gtk-on-nix",
-        "rev": "1dbb1c233a249e8cbc03907e965bd2a48d880262",
+        "rev": "b6c28cf87a7a055ffaad410f36852a7b2a9161ff",
         "type": "github"
       },
       "original": {
@@ -146,7 +146,7 @@
     },
     "root": {
       "inputs": {
-        "aagl-gtk-on-nix": "aagl-gtk-on-nix",
+        "aagl": "aagl",
         "home-manager": "home-manager",
         "nix-gaming": "nix-gaming",
         "nixpkgs": "nixpkgs_2"

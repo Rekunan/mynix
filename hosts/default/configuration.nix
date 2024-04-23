@@ -25,8 +25,8 @@
     experimental-features = [ "nix-command" "flakes" ];
     #substituters = [ "https://ezkea.cachix.org" ];
     #trusted-public-keys = [ "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI=" ];
-    substituters = ["https://nix-gaming.cachix.org"];
-    trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
+    substituters = [ "https://ezkea.cachix.org" "https://nix-gaming.cachix.org" ];
+    trusted-public-keys = [ "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI=" "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4=" ];
   };
 
   # Configure network proxy if necessary
@@ -163,7 +163,6 @@
       kate
       gparted
       libreoffice-qt
-      #osu-lazer-bin
       ntfs3g
       vesktop
       tree
@@ -182,7 +181,6 @@
       inputs.nix-gaming.packages.${pkgs.system}.wine-osu
       unzip
       gnome.zenity
-      #lutris
       wineWowPackages.waylandFull
       winetricks
       qbittorrent
