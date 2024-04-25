@@ -207,6 +207,7 @@
       jdk21
       libsForQt5.kamoso
       opentabletdriver
+      audacity
     ];
   };
 
