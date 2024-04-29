@@ -208,6 +208,7 @@
       libsForQt5.kamoso
       opentabletdriver
       audacity
+      prismlauncher
     ];
   };
 
