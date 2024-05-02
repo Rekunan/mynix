@@ -74,9 +74,12 @@
     #displayManager.sddm.enable = true;
     #displayManager.sddm.wayland.enable = true;
     displayManager.lightdm.background = "https://safe.reku.me/jPNXwAPptI8t.png";
-    libinput.touchpad.naturalScrolling = true;
-    libinput.touchpad.accelProfile = "flat";
-    libinput.mouse.accelProfile = "flat";
+  };
+
+  services.libinput = {
+    touchpad.naturalScrolling = true;
+    touchpad.accelProfile = "flat";
+    mouse.accelProfile = "flat";
   };
 
   services.displayManager.sddm = {
