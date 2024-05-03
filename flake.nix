@@ -24,6 +24,7 @@
         { 
           imports = [ aagl.nixosModules.default ];
           nix.settings = aagl.nixConfig; # Set up Cachix
+          programs.anime-game-launcher.enable = true;
           programs.honkers-railway-launcher.enable = true;
           programs.honkers-launcher.enable = true;
         }
