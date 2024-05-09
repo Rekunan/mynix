@@ -212,6 +212,8 @@
       opentabletdriver
       audacity
       prismlauncher
+      baobab
+      ncdu
     ];
   };
 
