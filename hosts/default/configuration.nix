@@ -99,7 +99,7 @@
 
   services.avahi = {
     enable = true;
-    nssmdns = true;
+    nssmdns4 = true;
     openFirewall = true;
   };
 
@@ -222,6 +222,7 @@
       ncdu
       discord
       tetrio-desktop
+      ruffle
     ];
   };
 
@@ -246,7 +247,7 @@
     EDITOR = "nvim";
   };
 
-  virtualisation.waydroid.enable = true;
+  #virtualisation.waydroid.enable = true;
 
   programs.gamemode.enable = true;
 
