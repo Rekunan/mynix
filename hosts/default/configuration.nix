@@ -223,6 +223,7 @@
       discord
       tetrio-desktop
       ruffle
+      nushell
     ];
   };
 
