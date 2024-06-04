@@ -224,6 +224,7 @@
       tetrio-desktop
       ruffle
       nushell
+      tailscale
     ];
   };
 
