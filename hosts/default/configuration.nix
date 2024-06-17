@@ -177,7 +177,7 @@
       tree
       git
       obsidian
-      ungoogled-chromium
+      #ungoogled-chromium
       monero-gui
       gimp
       vscodium
