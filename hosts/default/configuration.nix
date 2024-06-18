@@ -225,6 +225,7 @@
       ruffle
       nushell
       tailscale
+      fusee-interfacee-tk
     ];
   };
 
