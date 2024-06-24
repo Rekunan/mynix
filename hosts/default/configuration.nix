@@ -178,6 +178,7 @@
       git
       obsidian
       #ungoogled-chromium
+      chromium
       monero-gui
       gimp
       vscodium
