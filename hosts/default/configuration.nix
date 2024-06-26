@@ -227,6 +227,8 @@
       nushell
       tailscale
       fusee-interfacee-tk
+      betterbird
+      protonmail-bridge
     ];
   };
 
