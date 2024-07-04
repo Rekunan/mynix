@@ -87,9 +87,9 @@
     wayland.enable = true;
   };
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   hardware.opentabletdriver.enable = true;
@@ -190,7 +190,6 @@
       inputs.nix-gaming.packages.${pkgs.system}.wine-discord-ipc-bridge
       inputs.nix-gaming.packages.${pkgs.system}.wine-osu
       unzip
-      gnome.zenity
       wineWowPackages.waylandFull
       winetricks
       qbittorrent
@@ -229,6 +228,7 @@
       fusee-interfacee-tk
       betterbird
       protonmail-bridge
+      pkgs.zenity
     ];
   };
 
