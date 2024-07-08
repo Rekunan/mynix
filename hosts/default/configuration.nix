@@ -229,6 +229,7 @@
       betterbird
       protonmail-bridge
       pkgs.zenity
+      protonmail-bridge-gui
     ];
   };
 
