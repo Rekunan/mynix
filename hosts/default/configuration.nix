@@ -104,7 +104,7 @@
   };
 
   # Enable sound with pipewire.
-  sound.enable = true;
+  # sound.enable = true;
   hardware.pulseaudio = {
     enable = false;
     support32Bit = true;
