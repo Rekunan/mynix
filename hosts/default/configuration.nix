@@ -104,7 +104,6 @@
   };
 
   # Enable sound with pipewire.
-  # sound.enable = true;
   hardware.pulseaudio = {
     enable = false;
     support32Bit = true;
@@ -230,6 +229,7 @@
       protonmail-bridge
       pkgs.zenity
       protonmail-bridge-gui
+      yubioath-flutter
     ];
   };
 
