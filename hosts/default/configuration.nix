@@ -230,6 +230,14 @@
       pkgs.zenity
       protonmail-bridge-gui
       yubioath-flutter
+      yubikey-manager-qt
+      yubikey-agent
+      yubikey-touch-detector
+      yubikey-personalization-gui
+      yubico-piv-tool
+      piv-agent
+      yubico-pam
+      libyubikey
     ];
   };
 
