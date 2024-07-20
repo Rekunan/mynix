@@ -320,4 +320,5 @@
 
   services.flatpak.enable = true;
 
+  services.pcscd.enable = true;
 }
