@@ -321,4 +321,6 @@
   services.flatpak.enable = true;
 
   services.pcscd.enable = true;
+
+  services.joycond.enable = true;
 }
