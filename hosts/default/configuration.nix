@@ -238,6 +238,8 @@
       piv-agent
       yubico-pam
       libyubikey
+      lutris
+      protonup-qt
     ];
   };
 
