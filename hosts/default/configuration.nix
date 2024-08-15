@@ -240,6 +240,7 @@
       libyubikey
       lutris
       protonup-qt
+      discord
     ];
   };
 
