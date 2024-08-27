@@ -241,6 +241,7 @@
       lutris
       protonup-qt
       gnome.gnome-software
+      wireshark
     ];
   };
 
