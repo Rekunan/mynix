@@ -225,7 +225,7 @@
       nushell
       tailscale
       fusee-interfacee-tk
-      #betterbird
+      betterbird
       protonmail-bridge
       pkgs.zenity
       protonmail-bridge-gui
