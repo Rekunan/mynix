@@ -219,13 +219,15 @@
       prismlauncher
       baobab
       ncdu
-      discord
+      (pkgs.discord.override {
+        withVencord = true;
+      })
       tetrio-desktop
       ruffle
       nushell
       tailscale
       fusee-interfacee-tk
-      betterbird
+      #betterbird
       protonmail-bridge
       pkgs.zenity
       protonmail-bridge-gui
