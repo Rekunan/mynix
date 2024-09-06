@@ -249,6 +249,7 @@
       protonup-qt
       gnome.gnome-software
       wireshark
+      android-tools
     ];
   };
 
