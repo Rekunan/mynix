@@ -16,6 +16,8 @@
   boot.extraModulePackages = with config.boot.kernelPackages; [
     v4l2loopback
     bbswitch
+    rtw88
+    rtw89
   ];
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModprobeConfig = ''
