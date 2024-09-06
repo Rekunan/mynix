@@ -212,7 +212,7 @@
       ninja
       (pkgs.wrapOBS {
         plugins = with pkgs.obs-studio-plugins; [
-          DroidCam
+          obs-pipewire-audio-capture
         ];
       })
       vlc
