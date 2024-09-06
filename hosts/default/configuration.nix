@@ -210,7 +210,11 @@
       imagemagickBig
       meson
       ninja
-      obs-studio
+      (pkgs.wrapOBS {
+        plugins = with pkgs.obs-studio-plugins; [
+          DroidCam
+        ];
+      })
       vlc
       jdk21
       libsForQt5.kamoso
