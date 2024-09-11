@@ -13,7 +13,7 @@
       ../../modules/nixos/mounts.nix
     ];
 
-  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback bbswitch rtw88 rtw89 ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ bbswitch ];
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModprobeConfig = ''
     options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
@@ -130,6 +130,12 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+
+    lowLatency = {
+      enable = true;
+      quantum = 128;
+      rate = 48000;
+    };
   };
   services.pipewire.extraConfig.pipewire."92-low-latency" = {
     context.properties = {
@@ -157,11 +163,11 @@
     };
   };
 
-  services.pipewire.lowLatency = {
-    enable = true;
-    quantum = 128;
-    rate = 48000;
-  };
+  # services.pipewire.lowLatency = {
+  #   enable = true;
+  #   quantum = 128;
+  #   rate = 48000;
+  # };
 
   nixpkgs.config.pulseaudio = true;
 
