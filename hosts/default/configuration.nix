@@ -329,7 +329,7 @@
     enable = true;
     # Certain features, including CLI integration and system authentication support,
     # require enabling PolKit integration on some desktop environments (e.g. Plasma).
-    polkitPolicyOwners = [ "yourUsernameHere" ];
+    # polkitPolicyOwners = [ "yourUsernameHere" ];
   };
 
   # List services that you want to enable:
