@@ -263,6 +263,7 @@
       gnome.gnome-software
       wireshark
       android-tools
+      yt-dlg
     ];
   };
 
