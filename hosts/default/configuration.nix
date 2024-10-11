@@ -271,6 +271,8 @@
       libnotify
       xclip
       slop
+      slurp
+      grim
     ];
   };
 
