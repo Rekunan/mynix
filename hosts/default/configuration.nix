@@ -265,6 +265,7 @@
       android-tools
       yt-dlg
       anki-bin
+      mpv
     ];
   };
 
