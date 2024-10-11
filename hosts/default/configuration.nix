@@ -269,7 +269,8 @@
       maim
       xdotool
       libnotify
-      xclip 
+      xclip
+      slop
     ];
   };
 
