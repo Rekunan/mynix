@@ -266,6 +266,10 @@
       yt-dlg
       anki-bin
       mpv
+      maim
+      xdotool
+      libnotify
+      xclip 
     ];
   };
 
