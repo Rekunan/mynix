@@ -264,6 +264,7 @@
       wireshark
       android-tools
       yt-dlg
+      anki-bin
     ];
   };
 
