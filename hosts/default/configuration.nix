@@ -273,6 +273,7 @@
       slop
       slurp
       grim
+      python312Packages.pyscreenshot
     ];
   };
 
