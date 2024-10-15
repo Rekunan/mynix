@@ -274,6 +274,13 @@
       slurp
       grim
       python312Packages.pyscreenshot
+      dotnet-sdk_8
+      SDL2
+      stdenv.cc.cc.lib
+      libGL
+      libGLU
+      vulkan-loader
+      alsaLib
     ];
   };
 
