@@ -83,6 +83,12 @@
     displayManager.lightdm.background = "https://safe.reku.me/jPNXwAPptI8t.png";
   };
 
+  services.xrdp = {
+    enable = true;
+    defaultWindowManager = "startplasma-x11";
+    openFirewall = true;
+  };
+
   services.libinput = {
     touchpad.naturalScrolling = true;
     touchpad.accelProfile = "flat";
@@ -287,6 +293,9 @@
       python312Packages.pydub
       python312Packages.pyclip
       python312
+      tigervnc
+      guacamole-client
+      guacamole-server
     ];
   };
 
@@ -380,4 +389,8 @@
   services.pcscd.enable = true;
 
   services.joycond.enable = true;
+
+  services.x2goserver.enable = true;
+
+  services.meshcentral.enable = true;
 }
