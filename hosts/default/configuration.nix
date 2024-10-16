@@ -281,6 +281,7 @@
       libGLU
       vulkan-loader
       alsaLib
+      python311Packages.pip
     ];
   };
 
