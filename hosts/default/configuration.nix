@@ -296,6 +296,9 @@
       tigervnc
       guacamole-client
       guacamole-server
+      remmina
+      xrdp
+      meshcentral
     ];
   };
 
