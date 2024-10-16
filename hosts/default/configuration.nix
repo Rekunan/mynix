@@ -281,7 +281,12 @@
       libGLU
       vulkan-loader
       alsaLib
-      python311Packages.pip
+      python312Packages.pillow
+      python312Packages.numpy
+      python312Packages.sounddevice
+      python312Packages.pydub
+      python312Packages.pyclip
+      python312
     ];
   };
 
