@@ -293,12 +293,8 @@
       python312Packages.pydub
       python312Packages.pyclip
       python312
-      tigervnc
-      guacamole-client
-      guacamole-server
       remmina
       xrdp
-      meshcentral
     ];
   };
 
