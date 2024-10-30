@@ -295,6 +295,7 @@
       python312
       remmina
       xrdp
+      r2modman
     ];
   };
 
