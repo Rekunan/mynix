@@ -296,6 +296,7 @@
       remmina
       xrdp
       r2modman
+      heroic
     ];
   };
 
