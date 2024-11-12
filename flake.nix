@@ -12,7 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-gaming.url = "github:fufexan/nix-gaming";
+    nix-gaming.url = "github:fufexan/nix-gaming/3bba155a6dfe6a1922d3cf39828576ef99aacb6a";
   };
 
   outputs = { self, nixpkgs, aagl, ... }@inputs: {
