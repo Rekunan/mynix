@@ -75,11 +75,9 @@
   # };
 
   services.xserver = {
-    enable = true;
+    enable = false;
     videoDrivers = [ "amdgpu" ];
     desktopManager.plasma5.enable = true;
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
     displayManager.lightdm.background = "https://safe.reku.me/jPNXwAPptI8t.png";
   };
 
