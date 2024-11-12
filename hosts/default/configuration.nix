@@ -286,7 +286,7 @@
       libGL
       libGLU
       vulkan-loader
-      alsaLib
+      alsa-lib
       python312Packages.pillow
       python312Packages.numpy
       python312Packages.sounddevice
