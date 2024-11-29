@@ -264,7 +264,7 @@
       libyubikey
       lutris
       protonup-qt
-      gnome.gnome-software
+      gnome-software
       wireshark
       android-tools
       yt-dlg
