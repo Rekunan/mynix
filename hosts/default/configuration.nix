@@ -295,6 +295,7 @@
       xrdp
       r2modman
       heroic
+      alsa-utils
     ];
   };
 
@@ -319,7 +320,7 @@
     EDITOR = "nvim";
   };
 
-  #virtualisation.waydroid.enable = true;
+  virtualisation.waydroid.enable = true;
 
   programs.gamemode.enable = true;
 
