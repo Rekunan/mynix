@@ -117,9 +117,9 @@
   # Enable sound with pipewire.
   hardware.pulseaudio = {
     enable = false;
-    support32Bit = true;
-    package = pkgs.pulseaudioFull;
-    extraConfig = "load-module module-combine-sink";
+  #  support32Bit = true;
+  #  package = pkgs.pulseaudioFull;
+  #  extraConfig = "load-module module-combine-sink";
   };
   security.rtkit.enable = true;
   services.pipewire = {
