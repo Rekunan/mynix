@@ -262,7 +262,7 @@
       piv-agent
       yubico-pam
       libyubikey
-      lutris
+      lutris-unwrapped
       protonup-qt
       gnome-software
       wireshark
